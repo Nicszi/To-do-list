@@ -1,0 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+        int rows = 8;
+
+        for (int x = 0; x < rows; x++) {
+            for (int y = 0; y <= x; y++) {
+                System.out.print(ptriangle(x, y) + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static int ptriangle(int x, int y) {
+        if (y == 0 || y == x) {
+            return 1;
+        } else {
+            return ptriangle(x - 1, y - 1) + ptriangle(x -1, y);
+        }
+        }
+    
+}

@@ -2,17 +2,17 @@
 import java.util.Random;
 import java.util.*;
 
-public class Main {
+public class GuessTheNum {
     public static void main(String[] args) {
         Random random = new Random();
-        int randomNum = random.nextInt(100000) + 1;
+        int randomNum = random.nextInt(100) + 1;
         int guessedNum = 0;
         
         Scanner scanner = new Scanner(System.in);
         int guess;
         
         System.out.println("Guess the Number Game!");
-        System.out.println("Random guess between 1 and 100000");
+        System.out.println("Random guess between 1 and 100");
         do {
             System.out.print("Enter your guess:");
             guess = scanner.nextInt();

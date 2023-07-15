@@ -1,4 +1,4 @@
-public class findIndex {
+public class Main {
     public static int findIndex(int[] arr, int t){
         if (arr==null){
             return -1;
@@ -10,7 +10,7 @@ public class findIndex {
         }
         return -1;
     }
-    public static void findIndex(String[] args) {
+    public static void main(String[] args) {
         int[] arr = {1,3,5,7,12,25};
         int itemToSearch = 5;
         System.out.println(findIndex(arr,itemToSearch));
